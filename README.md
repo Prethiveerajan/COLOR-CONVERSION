@@ -106,8 +106,7 @@ cv2.destroyAllWindows
 ![output](rgb.png)
 ![output](rgb_gray.png)
 
-<br>
-<br>
+
 
 ### ii) HSV to RGB and BGR
 <br>
