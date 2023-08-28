@@ -36,8 +36,7 @@ b_h=cv2.cvtColor(resized_img,cv2.COLOR_BGR2HSV)
 cv2.imshow('BGR_HSV',b_h)
 cv2.waitKey(0)
 cv2.destroyAllWindows
-```
-```
+
 # BGR TO GRAY
 import cv2
 image =cv2.imread('caap.png')
@@ -46,8 +45,7 @@ b_g=cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
 cv2.imshow('BGR_GRAY',b_g)
 cv2.waitKey(0)
 cv2.destroyAllWindows
-```
-```
+
 # RGB TO HSV
 import cv2
 image =cv2.imread('caap.png')
@@ -58,8 +56,7 @@ cv2.imshow('RGB_HSV',r_h)
 cv2.waitKey(0)
 cv2.destroyAllWindows
 
-```
-```
+
 # RGB TO GRAY
 import cv2
 image =cv2.imread('caap.png')
@@ -70,7 +67,7 @@ cv2.imshow('RGB_GRAY',r_g)
 cv2.waitKey(0)
 cv2.destroyAllWindows
 
-```
+
 
 
 
