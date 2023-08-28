@@ -27,7 +27,7 @@ Anaconda - Python 3.7
 # i) Convert BGR and RGB to HSV and GRAY
 
 # BGR TO HSV
-```
+
 import cv2
 image =cv2.imread('caap.png')
 cv2.imshow('original',image)
@@ -96,6 +96,8 @@ cv2.destroyAllWindows
 
 
 ```
+
+
 ## Output:
 ### i) BGR and RGB to HSV and GRAY:
 ![output](original.png)
