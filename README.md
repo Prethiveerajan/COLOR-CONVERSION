@@ -22,9 +22,56 @@ Anaconda - Python 3.7
 
 ## Program:
 ```python
-# Developed By:
-# Register Number:
+# Developed By:Prethiveerajan P 
+# Register Number:212221230079
 # i) Convert BGR and RGB to HSV and GRAY
+
+# BGR TO HSV
+```
+import cv2
+image =cv2.imread('caap.png')
+cv2.imshow('original',image)
+resized_img = cv2.resize(image, None, fx=0.5, fy=0.5, interpolation=cv2.INTER_LINEAR)
+b_h=cv2.cvtColor(resized_img,cv2.COLOR_BGR2HSV)
+cv2.imshow('BGR_HSV',b_h)
+cv2.waitKey(0)
+cv2.destroyAllWindows
+```
+```
+# BGR TO GRAY
+import cv2
+image =cv2.imread('caap.png')
+cv2.imshow('original',image)
+b_g=cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
+cv2.imshow('BGR_GRAY',b_g)
+cv2.waitKey(0)
+cv2.destroyAllWindows
+```
+```
+# RGB TO HSV
+import cv2
+image =cv2.imread('caap.png')
+cv2.imshow('original',image)
+
+r_h=cv2.cvtColor(image,cv2.COLOR_RGB2HSV)
+cv2.imshow('RGB_HSV',r_h)
+cv2.waitKey(0)
+cv2.destroyAllWindows
+
+```
+```
+# RGB TO GRAY
+import cv2
+image =cv2.imread('caap.png')
+cv2.imshow('original',image)
+
+r_g=cv2.cvtColor(image,cv2.COLOR_RGB2GRAY)
+cv2.imshow('RGB_GRAY',r_g)
+cv2.waitKey(0)
+cv2.destroyAllWindows
+
+```
+
 
 
 
@@ -53,7 +100,13 @@ Anaconda - Python 3.7
 
 ```
 ## Output:
-### i) BGR and RGB to HSV and GRAY
+### i) BGR and RGB to HSV and GRAY:
+![output](original.png)
+![output](bgr_hsv.png)
+![output](gray.png)
+![output](rgb.png)
+![output](rgb_gray.png)
+
 <br>
 <br>
 
