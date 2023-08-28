@@ -24,7 +24,7 @@ Anaconda - Python 3.7
 ```python
 # Developed By:Prethiveerajan P 
 # Register Number:212221230079
-# i) Convert BGR and RGB to HSV and GRAY
+# i) Convert BGR and RGB to HSV and GRAY:
 
 # BGR TO HSV
 
@@ -74,23 +74,80 @@ cv2.destroyAllWindows
 
 
 
-# ii)Convert HSV to RGB and BGR
+# ii)Convert HSV to RGB and BGR:
+# HSV TO RGB
+import cv2
+ori=cv2.imread('dd.jpg')
+cv2.imshow('Original',ori)
+h_r=cv2.cvtColor(ori,cv2.COLOR_HSV2RGB)
+cv2.imshow('HSV_RGB',h_r)
+cv2.waitKey(0)
+cv2.destroyAllWindows
+
+# HSV TO BGR
+import cv2
+ori=cv2.imread('dd.jpg')
+cv2.imshow('Original',ori)
+h_b=cv2.cvtColor(ori,cv2.COLOR_HSV2BGR)
+cv2.imshow('HSV_BGR',h_b)
+cv2.waitKey(0)
+cv2.destroyAllWindows
 
 
 
 
 
-# iii)Convert RGB and BGR to YCrCb
+# iii)Convert RGB and BGR to YCrCb:
+# RGB TO YCrCb
+import cv2
+ori=cv2.imread('dd.jpg')
+YCrCb_image = cv2.cvtColor(ori, cv2.COLOR_RGB2YCrCb)
+cv2.imshow('RGB_YCRCB',YCrCb_image)
+cv2.waitKey(0)
+cv2.destroyAllWindows
+# BGR TO YCrCb
+import cv2
+image1=cv2.imread('dd.jpg')
+YCrCb_image = cv2.cvtColor(image1, cv2.COLOR_BGR2YCrCb)
+cv2.imshow('BGR_YCRCB',YCrCb_image)
+cv2.waitKey(0)
+cv2.destroyAllWindows
 
 
 
 
-# iv)Split and Merge RGB Image
+# iv)Split and Merge RGB Image:
+#Split and Merge RGB Imag
+import cv2
+img = cv2.imread("caap.png")
+img1= cv2.resize(img, (270,190))
+cv2
+b,g,r = cv2.split(img1)
+cv2.imshow("RED MODEL", r)
+cv2.imshow("GREEN MODEL", g)
+cv2.imshow("BLUE MODEL ", b)
+merger = cv2.merge([b,g,r])
+cv2.imshow("MERGED IMAGE", merger )
+cv2.waitKey(0)
+cv2.destroyAllWindows()
 
 
 
-
-# v) Split and merge HSV Image
+# v) Split and merge HSV Image:
+#Split and merge HSV Image
+import cv2
+img = cv2.imread("dd.jpg")
+img1= cv2.resize(img, (270,190))
+hsv = cv2.cvtColor(img1 , cv2.COLOR_BGR2HSV)
+cv2.imshow("INITIAL_HSV ", hsv)
+h,s,v = cv2.split(hsv)
+cv2.imshow("RED MODEL", h)
+cv2.imshow("GREEN MODEL", s)
+cv2.imshow("BLUE MODEL ", v)
+merger = cv2.merge([h,s,v])
+cv2.imshow("MERGED IMAGE", merger )
+cv2.waitKey(0)
+cv2.destroyAllWindows()
 
 
 
@@ -109,20 +166,21 @@ cv2.destroyAllWindows
 
 
 ### ii) HSV to RGB and BGR
-<br>
-<br>
+![output](twoone.png)
+![output](tt.png)
 
 ### iii) RGB and BGR to YCrCb
-<br>
-<br>
+![output](to.png)
+![output](ttr.png)
+
 
 ### iv) Split and merge RGB Image
-<br>
-<br>
+![output](4.png)
+
 
 ### v) Split and merge HSV Image
-<br>
-<br>
+![output](5.png)
+
 
 
 ## Result:
